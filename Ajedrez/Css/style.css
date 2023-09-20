@@ -1,0 +1,36 @@
+body{
+  background: steelblue;
+  color: #eee;
+  font:  arial;
+  text-align: center;
+}
+
+#tablero{
+  background: white;
+  box-shadow: 0 10px 10px -6px rgba(0, 0, 0, .6);
+  border-radius: 3px;
+  width: 400px;
+  height: 400px;
+  border-collapse: collapse;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  }
+  #tablero td{
+    color: gray;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, .6);
+    width: 50px;
+    height: 50px;
+  }
+  #tablero tr:nth-child(odd) td:nth-child(even),
+  #tablero tr:nth-child(even) td:nth-child(odd){
+    background: #000000;
+  }
+  #tablero tr:nth-child(n+7) td{
+      color: brown;
+      text-shadow:1px 1px 1px rgba(255, 255, 255, .6); 
+  }
